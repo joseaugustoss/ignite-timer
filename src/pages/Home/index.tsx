@@ -5,8 +5,8 @@ import * as zod from 'zod';
 import { CountdownContainer, FormContainer, HomeContainer, MinutesAmountInput, Separator, StartCountdownButton, StopCountdownButton, TaskInput } from "./styles";
 import { useState, useEffect } from "react";
 import {differenceInSeconds} from 'date-fns'
-import { NewCycleForm } from "./Components/NewCycleForm";
-import { Countdown } from "./Components/Countdown";
+import { NewCycleForm } from "./components/NewCycleForm";
+import { Countdown } from "./components/Countdown";
 
 const newCycleFormValidadeSchema = zod.object({
   task: zod.string().min(1, 'Informe a tarefa'),
